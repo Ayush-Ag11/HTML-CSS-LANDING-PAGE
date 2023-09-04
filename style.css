@@ -7,6 +7,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 #main{
@@ -77,18 +78,21 @@ html,body{
 
 #vertical-text{
     position: absolute;
-    right: -19.5%;
-    top: 42%;
+    right: -21%;
+    text-orientation: mixed;
+    /* left: 50%; */
+    top: 43%;
+    transform-origin: 0%,0%;
 }
 
 #vertical-text h1{
     font-size: 65px;
     font-weight: 900;
     font-family: var(--font-face, "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: white;
     color: transparent;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     transform: rotate(90deg);
     text-transform: uppercase;
 }
@@ -98,7 +102,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 408px;
+    width: 522px;
     top: 5%;
     left: 5%;
 }
